@@ -1,0 +1,57 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header{
+    background-image:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0)), url(../images/homepage.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.main{
+    position: absolute;
+    top: 42%;
+    left: 20%;
+    font-size: 36px;
+    color: #fff;
+}
+.login{
+    position: absolute;
+    left: 56%;
+    top: 20%;
+    border: 3px solid black;
+    width: 30%;
+    height: 60%;
+    background-color: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0))
+}
+.login h3{
+    position: absolute;
+    top: 8%;
+    left: 40%;
+}
+.container{
+    margin: 20% 9% 0% 9%;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }

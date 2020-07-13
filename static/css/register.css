@@ -1,0 +1,68 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) , url(../images/regbr.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.box{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+    background-position: center;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    width: 400px;
+    height: 400px;
+}
+.main{
+    position: absolute;
+    left: 548px;
+    top: 90px;
+    font-style: bold;
+    font-size: 30px;
+}
+form{
+    display: table;
+    margin-left: 36px;
+}
+p{
+    
+    display: table-row;
+}
+span{
+    font-style: bold;
+    font-size: 18px;
+    display: table-cell;
+    margin-left: 55px;
+}
+input{
+    display: table-cell;
+    margin-left: 50px;
+    margin-top: 30px;
+    width: 130px;
+}
+.btn{
+    position: absolute;
+    bottom: 42px;
+    left: 118px;
+    width: 20%;
+}
+.btn:hover{
+    background-color: grey;
+    color: white;
+    outline: none;
+}
+input:active{
+    
+    color: black;
+}
+.end{
+    position: absolute;
+    top: 550px;
+    left: 500px;
+}

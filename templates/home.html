@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+
+<body>
+    <header>
+        {% if user.is_authenticated %}
+        <div class="main">
+            <h3>Hello, {{user.username}}</h3>
+            <h6>Have A Wonderfull Day</h6>
+            <a href="logout">
+                <h6>Logout</h6>
+            </a>
+        </div>
+        {% else %}
+        <div class="main">
+            <h1>welcome</h1>
+        </div>
+
+        <div class="login">
+            <h3>Login</h3>
+            <div class="contain">
+                <div class="container">
+                    <form action="login" method="POST">
+                        {% csrf_token %}
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="username" id="uname" required>
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="password" id="psw" required>
+                        <button type="submit" href="login">Login</button><br>
+                    </form>
+                    <b>Create new  <a href="register">Account</a></b>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </header>
+</body>
+</html>
+
